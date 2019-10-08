@@ -1,2 +1,3 @@
 # Image-Converter
-Image format converter
+Image format converter 
+jpg/jpeg to png
