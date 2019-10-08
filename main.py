@@ -28,7 +28,8 @@ def convert_to_png(src_dir, tgt_dir):
                 for file in list_of_jpg_images:
                     with Image.open(f'{src_dir}/{file}') as img:
                         name = file.split('.')[0]
-                        img.save(f'{tgt_dir}/{name}.png','png')
+                        if name[1] in ('jpg','jpeg'):
+                            img.save(f'{tgt_dir}/{name}.png','png')
 
         else:
             print('Source directory does not exist')
